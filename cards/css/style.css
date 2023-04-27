@@ -9,15 +9,21 @@ body {
 }
 .container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: space-evenly;
 }
 .card {
   position: relative;
-  padding: 40px 40px;
-  width: 430px;
-  height: 250px;
+  padding: 40px;
+  min-width: 350px;
+  max-width: 420px;
+  width: 100%;
   border-radius: 10px;
   overflow: hidden;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;  
 }
 .color-1 {
   background: rgb(253,191,153);
@@ -32,10 +38,9 @@ body {
   background: rgb(125,218,209);
   background: linear-gradient(90deg, rgba(125,218,209,1) 14%, rgba(0,208,182,1)   86%);
 }
-.text {
-  font-size: 20px;
-  /* text-decoration: solid; */
-  color: white;  
+.card-heading {
+  font-size: inherit;
+  font-weight: inherit;
 }
 .text-big {
   font-size: 40px;
@@ -46,26 +51,25 @@ body {
 }
 .position-svg {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 40px;
+  right: 40px;
 }
-.circle-1 {
+.card::before,
+.card::after {
+  content: '';
   position: absolute;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
   opacity: 0.2;
+}
+
+.card::before {
   top: -50px;
   right: -130px;
 }
-.circle-2 {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  opacity: 0.2;
+.card::after {
   bottom: -130px;
   right: -30px;
 }
