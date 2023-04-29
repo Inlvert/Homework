@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&  display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="box-container">
+    <article class="register-form">
+      <div class="box-heading">
+        <h1 class="heading">Register</h1>
+        <h2 class="heading-2">Create your account. It's free and only takes a   minute.</h2>
+      </div>
+      <form class="form">
+        <div class="between">
+          <input
+          class="text-input text-widht"
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="First Name"
+          />
+          <input
+          class="text-input text-widht"
+          type="text" 
+          id="fname" 
+          name="fname" 
+          placeholder="Last Name"
+          />
+        </div>
+        <input
+        class="text-input"
+        required
+        name="email"
+        type="email"
+        autocomplete="email"
+        pattern="^[a-zA-Z0-9]{2,32}@[a-z]{3,32}\.[a-z]{2,5}$"
+        placeholder="Email"
+        />
+        <input
+        class="text-input"
+        id="pass"
+        name="password"
+        type="password"
+        required
+        placeholder="Password"
+        pattern="^[A-Za-z0-9]{8,16}$"
+        />
+        <input
+        class="text-input"
+        id="pass"
+        name="password"
+        type="password"
+        required
+        placeholder="Confirm Password"
+        pattern="^[A-Za-z0-9]{8,16}$"
+        />
+        <label class="text-input checkbox-position">
+          <input  type="checkbox" name="privacy policy" required value="yes"/><p   class="padding-left">I accept the
+            <a href="#" class="link">Terms of Use</a>
+            &
+            <a href="#" class="link">Privacy Policy</a>.
+          </p>
+        </label>
+        <button class="text-input button" type="submit">Register Now</button>
+      </form>
+    </article>
+  </div>
+</body>
+</html>
