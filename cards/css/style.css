@@ -84,4 +84,5 @@ body {
 .card::after {
   bottom: -130px;
   right: -30px;
+  
 }
